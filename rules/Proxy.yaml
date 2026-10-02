@@ -8,4 +8,6 @@
 # payload:
 #   - DOMAIN-SUFFIX,openai.com
 #   - DOMAIN-SUFFIX,githubusercontent.com
-payload: []
+payload: 
+    - DOMAIN-SUFFIX,steamcommunity.com
+    - DOMAIN-SUFFIX,steampowered.com
