@@ -1,0 +1,11 @@
+# 自定义代理规则（最高优先级，先于所有内置规则命中）
+# 用于强制某些域名/IP 走代理，每行一条，只写匹配条件，不要写目标。
+#
+# 写法与 Direct.yaml 相同：DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD /
+# IP-CIDR / GEOSITE / GEOIP 等。
+#
+# 示例（取消注释并改成你需要的）：
+# payload:
+#   - DOMAIN-SUFFIX,openai.com
+#   - DOMAIN-SUFFIX,githubusercontent.com
+payload: []

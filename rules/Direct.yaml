@@ -1,0 +1,16 @@
+# 自定义直连规则（最高优先级，先于所有内置规则命中）
+# 每行一条，只写匹配条件，不要写 DIRECT/REJECT 等目标——目标由订阅侧指定。
+#
+# 常用写法：
+#   DOMAIN,www.example.com        精确匹配单个域名
+#   DOMAIN-SUFFIX,example.com     匹配 example.com 及其所有子域名
+#   DOMAIN-KEYWORD,example        域名包含关键字即命中（慎用，易误伤）
+#   IP-CIDR,1.2.3.4/32            匹配 IP 段（规则侧加 no-resolve 时不触发 DNS 解析）
+#   GEOSITE,cn                    匹配 geosite 分类（mihomo 系支持）
+#   GEOIP,CN                      匹配 IP 归属地
+#
+# 示例（取消注释并改成你需要的）：
+# payload:
+#   - DOMAIN-SUFFIX,myhome.lan
+#   - DOMAIN-SUFFIX,company-internal.com
+payload: []
