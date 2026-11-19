@@ -13,4 +13,5 @@
 # payload:
 #   - DOMAIN-SUFFIX,myhome.lan
 #   - DOMAIN-SUFFIX,company-internal.com
-payload: []
+payload: 
+    - SRC-IP-CIDR,192.168.0.1/16
